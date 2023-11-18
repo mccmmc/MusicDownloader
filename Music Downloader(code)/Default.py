@@ -26,7 +26,7 @@ class Default:
         try:
             self.client = yandex_music.Client(self.user_token).init()
         except yandex_music.exceptions.UnauthorizedError:
-            print('Неправильный токен сука')
+            print('Введен неверный токен')
 
     def config_enabled(self):
         try:
